@@ -1,0 +1,90 @@
+h2.smaller {
+  font-size: 80px;
+}
+
+.vox-logo {
+  position: relative;
+  top: 25px;
+}
+
+.vox-cardstack {
+  bottom: 0;
+  max-height: 65%;
+  position: absolute;
+  right: 5%;
+}
+
+.growth-mindset {
+  background-color: black;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+
+  h2 {
+    color: white;
+  }
+}
+
+.junior-senior {
+  min-width: 40%;
+}
+
+.javascript-intro {
+  max-height: 50% !important;
+  max-width: 60% !important;
+}
+
+.javascript-lang {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  font-family: $mono;
+}
+
+.javascript-difficulty {
+  max-height: calc(69%);
+}
+
+.javascript-core {
+  width: 65%;
+}
+
+.backend-frontend {
+  width: 70%;
+}
+
+.mv-separation {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+
+  .divider {
+    border-left: 1px solid #bbb;
+    display: block;
+    height: calc(110%);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1;
+  }
+
+  img,
+  .column-list {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .right {
+    padding-right: 30px;
+    text-align: right;
+  }
+
+  .left {
+    padding-left: 30px;
+  }
+}
+
+.backbone-rest {
+  font-family: $mono;
+}
