@@ -12,7 +12,7 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="top-left">
-    <h1>Backbone @<br><%= image_tag 'vox.svg', :alt => 'Vox', :class => 'vox-logo' %></h1>
+    <h1>Backbone <span class="smaller">@</span><br><%= image_tag 'vox.svg', :alt => 'Vox', :class => 'vox-logo' %></h1>
   </div>
   <%= image_tag 'cardstack.png', :alt => 'Cardstack', :class => 'vox-cardstack' %>
 </div>
@@ -20,11 +20,13 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="top-left">
     <h1>Objectives</h1>
-    <ul>
-      <li>Learning</li>
-      <li>Learning... JavaScript</li>
-      <li>Learning... Backbone</li>
-      <li>Learning... The Future</li>
+  </div>
+  <div class="bottom-left">
+    <ul class="bullet-list">
+      <li>Learning.</li>
+      <li>Learning Technology.</li>
+      <li>Learning Backbone.</li>
+      <li>Learning the Future.</li>
     </ul>
   </div>
 </div>
@@ -41,11 +43,11 @@ title: Learning (Backbone, and Other Technologies)
   </div>
 </div>
 
-<div class="slide section">
+<div class="slide sub-section">
   <div class="center-content">
     <h2>Growth Mindset</h2>
     <blockquote>
-      <p>"The moment we believe that success is determined by an ingraned<br> level of ability, we will be brittle in the face of adversity."</p>
+      <p>"The moment we believe that success is determined by an ingraned level of ability, we will be brittle in the face of adversity."</p>
       <footer>&mdash; Josh Waitzkin</footer>
     </blockquote>
   </div>
@@ -53,8 +55,11 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide section growth-mindset">
   <iframe width="560" height="315" src="//www.youtube.com/embed/pN34FNbOKXc?start=119&end=173&showinfo=0&modestbranding=1&controls=0" frameborder="0" allowfullscreen></iframe>
-  <div class="bottom-left">
-    <p>Eduardo Briceno, "The Power of Belief: Mindset and Success"</p>
+  <div class="bottom-panel">
+    <p>
+      Eduardo Briceno,<br>
+      "The Power of Belief: Mindset and Success"
+    </p>
   </div>
 </div>
 
@@ -62,14 +67,14 @@ title: Learning (Backbone, and Other Technologies)
   <h2 class="center-content">I don't know... <u>Yet</u>.</h2>
 </div>
 
-<div class="slide section">
-  <h2 class="center-content">Yes, Let's!</h2>
+<div class="slide sub-section">
+  <h2 class="center-content"><%= image_tag 'ga-white.png', :alt => 'GA', :class => "ga-yes" %> Yes, Let's!</h2>
 </div>
 
 <div class="slide">
   <div class="center-content">
     <h2>Mentorship</h2>
-    <p>Junior + Senior experience levels push each other <br>along the Emotional Cycle of Change.</p>
+    <p>Junior + Senior experience levels push <em>each other</em> <br>along the Emotional Cycle of Change.</p>
     <%= image_tag 'junior-senior.svg', :alt => 'Junior + Senior', :class => 'junior-senior' %>
   </div>
 </div>
@@ -81,7 +86,6 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>JavaScript is Small</h2>
-    <p>(There's not much surface area)</p>
     <ul class="column-list javascript-lang">
       <li>String</li>
       <li>Number</li>
@@ -90,7 +94,7 @@ title: Learning (Backbone, and Other Technologies)
       <li>Object</li>
       <li>Array</li>
       <li>Function</li>
-      <li>RegEx</li>
+      <li>Math</li>
       <li>var/function</li>
       <li>if/else</li>
       <li>for/while</li>
@@ -107,36 +111,55 @@ title: Learning (Backbone, and Other Technologies)
   </div>
 </div>
 
-<div class="slide section">
+<div class="slide sub-section">
   <div class="center-content">
     <h2>Stop Tickling JS</h2>
-    <p>Sticking to the "easy parts" makes the language harder to understand.</p>
+    <p>By avoiding nuances that make JavaScript unique, even the "easy parts" seem oblique and confusing.</p>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
-    <h2 class="smaller">JavaScript, The Real Parts</h2>
-    <ul class="column-list javascript-core">
-      <li><h3>Easy Parts</h3></li>
-      <li>Data Types &amp; Variables</li>
-      <li>Conditionals</li>
-      <li>Data Structures &amp; Enums</li>
-      <li>Simple Functions</li>
-      <li><h3>Real Parts</h3></li>
-      <li>First-Class Functions</li>
-      <li>Closure &amp; Scope</li>
-      <li>Contextual Invocation</li>
-      <li>Prototypal Inheritance</li>
-    </ul>
+    <h2>JS, The Real Parts</h2>
+    <div class="column-list javascript-core">
+      <h3>Easy Parts</h3>
+      <ul class="bullet-list">
+        <li>Data&nbsp;Types&nbsp;&amp;&nbsp;Variables</li>
+        <li>Conditionals</li>
+        <li>Data&nbsp;Structures&nbsp;&amp;&nbsp;Enums</li>
+        <li>Simple Functions</li>
+      </ul>
+      <h3>Real Parts</h3>
+      <ul class="bullet-list">
+        <li>First-Class Functions</li>
+        <li>Closure &amp; Scope</li>
+        <li>Contextual Invocation</li>
+        <li>Prototypal Inheritance</li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
-    <h2>Backend => Frontend</h2>
-    <p>(How do we effectively talk to a REST API if we don't know how they work?)</p>
+    <h2>Backend / Frontend</h2>
+    <p>What do we learn first? Why?</p>
     <%= image_tag 'backend-frontend.svg', :alt => 'Backend to Frontend', :class => 'backend-frontend' %>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="center-content">
+    <h2>Learn Other Languages</h2>
+    <ul class="bullet-list learn-languages">
+      <li>You become smarter.</li>
+      <li>You build multitasking skills.</li>
+      <li>You forestall degenerative diseases of the brain.</li>
+      <li>You become more perceptive.</li>
+      <li>Your memory improves.</li>
+      <li>Your decision-making skills improve.</li>
+      <li>You improve your native language.</li>
+    </ul>
   </div>
 </div>
 
@@ -156,7 +179,7 @@ title: Learning (Backbone, and Other Technologies)
   <div class="center-content">
     <h2>Model / View Separation</h2>
     <div class="mv-separation">
-      <span class="divider"></span>
+      <span class="divider" style="height:calc(110%);"></span>
       <%= image_tag 'mv-separation.svg', :alt => 'Model/View Separation' %>
       <ul class="column-list">
         <li class="right"><h3>Model</h3></li>
@@ -173,15 +196,17 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>M/V is One-to-Many</h2>
-    <span class="divider"></span>
-    <%= image_tag 'mv-many.svg', :alt => 'Model/View Separation' %>
+    <div class="mv-separation">
+      <span class="divider"></span>
+      <%= image_tag 'mv-many.svg', :alt => 'Model/View Separation' %>
+    </div>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
     <h2>Collection / Model</h2>
-    <p>Are a direct representation of RESTful resources.</p>
+    <p>... are direct representations of RESTful resources.</p>
     <ul class="column-list backbone-rest">
       <li><h3>Routes</h3></li>
       <li>GET&nbsp; /muppets/</li>
@@ -201,8 +226,15 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
+    <h2>Model.parse</h2>
+    <p></p>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="center-content">
     <h2>Routers</h2>
-    <p>(Are hard.)</p>
+    <p>Are hard.</p>
   </div>
 </div>
 
@@ -212,8 +244,8 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>A Tech Retrospective</h2>
-    <p>This stuff has changed, and keeps changing</p>
+    <h2>A Retrospective</h2>
+    <%= image_tag 'choropleth.png', :alt => 'Choropleth Map', :height => '350' %>
     <!--ul class="">
       <li>Midi => Flash => Adudio Tag, WebAudio API</li>
       <li>Flare => Protovis => D3</li>
@@ -224,24 +256,29 @@ title: Learning (Backbone, and Other Technologies)
   </div>
 </div>
 
-<div class="slide">
+<div class="slide sub-section">
   <div class="center-content">
     <h2>Design Patterns</h2>
-    <p>The things that haven't changed are design patterns.</p>
+    <blockquote>
+      <p class="smaller">The iPhone SDK is based on the NeXTStep object-oriented frameworks like the AppKit. ... Which is a great example of the enduring nature of good design, and how it survives different technical manifestations.</p>
+      <footer>&mdash; Erich Gamma &amp; Richard Helm</footer>
+    </blockquote>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
     <h2>Backbone IS Pattern</h2>
-    <p>(At its core, Backbone embodies a current implementation of many established patterns.)</p>
+    <blockquote>
+      <p>Backbone is the minimal abstraction of ...<br> the common solutions for 90% of use cases.</p>
+      <footer>&mdash; Jeremy Ashkenas</footer>
+    </blockquote>
   </div>
 </div>
 
-<div class="slide">
+<div class="slide conway">
   <div class="center-content">
-    <h2>Tear it down &amp; rebuild</h2>
-    <p>(Conway's game of life... the path forward is letting go.)</p>
+    <h2>Start Over</h2>
   </div>
 </div>
 
@@ -260,8 +297,10 @@ title: Learning (Backbone, and Other Technologies)
       <li>gmac (GitHub)</li>
     </ul>
 
-    <img src="vox-media.svg">
-    <img src="general-assembly.png">
-    <img src="backbone-epoxy.png">
+    <ul class="logo-soup">
+      <li><%= image_tag 'vox-media.svg', :alt => 'Vox Media' %></li>
+      <li><%= image_tag 'ga-color.png', :alt => 'General Assembly' %></li>
+      <!--li><%= image_tag 'epoxy.png', :alt => 'Backbone.Epoxy' %></li-->
+    </ul>
   </div>
 </div>

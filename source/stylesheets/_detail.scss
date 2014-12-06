@@ -2,6 +2,10 @@ h2.smaller {
   font-size: 80px;
 }
 
+blockquote .smaller {
+  font-size: 0.9em;
+}
+
 .vox-logo {
   position: relative;
   top: 25px;
@@ -24,8 +28,21 @@ h2.smaller {
   }
 }
 
+.ga-yes {
+  max-height: 125px;
+  max-width: 125px;
+  opacity: 0.3;
+  position: relative;
+  top: 0.15em;
+}
+
 .junior-senior {
   min-width: 40%;
+}
+
+.learn-languages {
+  margin: 0 auto;
+  width: 75%;
 }
 
 .javascript-intro {
@@ -45,7 +62,7 @@ h2.smaller {
 }
 
 .javascript-core {
-  width: 65%;
+  width: 80%;
 }
 
 .backend-frontend {
@@ -60,7 +77,7 @@ h2.smaller {
   .divider {
     border-left: 1px solid #bbb;
     display: block;
-    height: calc(110%);
+    height: calc(100%);
     left: 50%;
     position: absolute;
     top: 0;
@@ -87,4 +104,25 @@ h2.smaller {
 
 .backbone-rest {
   font-family: $mono;
+}
+
+.conway {
+  background: image-url('conway.gif') no-repeat center center;
+  background-size: cover;
+}
+
+.logo-soup {
+  margin-top: 1em;
+  
+  li {
+    display: inline-block;
+    height: 50px;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+
+  img {
+    max-height: 50px;
+    max-width: 230px;
+  }
 }

@@ -1,0 +1,17 @@
+American Council for the Teaching of Foreign Languages
+http://www.actfl.org/advocacy/discover-languages/advocacy/discover-languages/what-the-research-shows/references-cognitive#improves_cognitive
+
+Most of the people writing in JavaScript are not programmers. They lack the training and discipline to write good programs. JavaScript has so much expressive power that they are able to do useful things in it, anyway. This has given JavaScript a reputation of being strictly for the amateurs, that it is not suitable for professional programming. This is simply not the case.
+
+
+Good programming cannot be taught by preaching generalities. The way to learn to program well is by seeing, over and over, how real programs can be improved by the application of a few principles of good practice and a little common sense.
+
+Kernighan and Plauger's The Elements of Programming Style in 1978
+
+
+Design patterns are very useful when we study how they work so we can create similar patterns.  They are bad when we try to copy them directly.  If one reads the Gang of Four, he will realize that the authors often give several examples of each pattern and they're all slightly different.  One might also notice that there is a lot of talk about the OO concepts that lead to the patterns.
+
+
+Erich Gamma: Yes, and it is funny that you mention the iPhone. The iPhone SDK is based on the NeXTStep object-oriented frameworks like the AppKit. It already existed when we wrote Design Patterns 15 years ago and was one source of inspiration. We actually refer to this framework in several of our patterns: Adapter, Bridge, Proxy, and Chain of Responsibility. ... Which is a great example of the enduring nature of good design, and how it survives different technical manifestations.
+
+http://www.informit.com/articles/article.aspx?p=1404056
