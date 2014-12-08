@@ -103,7 +103,53 @@ blockquote .smaller {
 }
 
 .backbone-rest {
-  font-family: $mono;
+  border: 3px solid $main-color;
+  font: 24px/2 $mono;
+  margin: 0 auto 20px;
+  width: 80%;
+
+  td {
+    padding: 0 20px;
+  }
+
+  em {
+    color: #ccc;
+    font-style: normal;
+  }
+
+  .component {
+    background-color: $main-color;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    width: 25%;
+  }
+
+  &.model {
+    border-color: $main-color;
+
+    .component {
+      background-color: $main-color;
+    }
+  }
+}
+
+.backbone-parse {
+  font: 22px/1.4 $mono;
+
+  b {
+    color: #EF4836;
+    font-weight: bold;
+  }
+
+  .column.left {
+    border-right: 1px solid #ccc;
+    padding-right: 50px;
+  }
+
+  .column.right {
+    padding-left: 50px;
+  }
 }
 
 .conway {

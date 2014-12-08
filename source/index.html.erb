@@ -24,7 +24,7 @@ title: Learning (Backbone, and Other Technologies)
   <div class="bottom-left">
     <ul class="bullet-list">
       <li>Learning.</li>
-      <li>Learning Technology.</li>
+      <li>Learning Foundation.</li>
       <li>Learning Backbone.</li>
       <li>Learning the Future.</li>
     </ul>
@@ -80,7 +80,7 @@ title: Learning (Backbone, and Other Technologies)
 </div>
 
 <div class="slide section">
-  <h1 class="center-content">Learning JavaScript.</h1>
+  <h1 class="center-content">Learning Foundation.</h1>
 </div>
 
 <div class="slide">
@@ -113,29 +113,34 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide sub-section">
   <div class="center-content">
-    <h2>Stop Tickling JS</h2>
-    <p>By avoiding nuances that make JavaScript unique, even the "easy parts" seem oblique and confusing.</p>
+    <blockquote>
+      <p>Ironically, embracing only the "easy" parts of JavaScript makes many operations seem illogical, and thus makes the language more confusing as a whole.</p>
+    </blockquote>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
     <h2>JS, The Real Parts</h2>
-    <div class="column-list javascript-core">
-      <h3>Easy Parts</h3>
-      <ul class="bullet-list">
-        <li>Data&nbsp;Types&nbsp;&amp;&nbsp;Variables</li>
-        <li>Conditionals</li>
-        <li>Data&nbsp;Structures&nbsp;&amp;&nbsp;Enums</li>
-        <li>Simple Functions</li>
-      </ul>
-      <h3>Real Parts</h3>
-      <ul class="bullet-list">
-        <li>First-Class Functions</li>
-        <li>Closure &amp; Scope</li>
-        <li>Contextual Invocation</li>
-        <li>Prototypal Inheritance</li>
-      </ul>
+    <div class="column-layout javascript-core">
+      <div class="column">
+        <h3>Easy Parts</h3>
+        <ul class="bullet-list">
+          <li>Data&nbsp;Types&nbsp;&amp;&nbsp;Variables</li>
+          <li>Conditionals</li>
+          <li>Data&nbsp;Structures&nbsp;&amp;&nbsp;Enums</li>
+          <li>Simple Functions</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Real Parts</h3>
+        <ul class="bullet-list">
+          <li>First-Class Functions</li>
+          <li>Closure &amp; Scope</li>
+          <li>Contextual Invocation</li>
+          <li>Prototypal Inheritance</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -150,11 +155,10 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>Learn Other Languages</h2>
+    <h2 class="smaller">Benefits of Multiple &nbsp;Languages</h2>
     <ul class="bullet-list learn-languages">
       <li>You become smarter.</li>
       <li>You build multitasking skills.</li>
-      <li>You forestall degenerative diseases of the brain.</li>
       <li>You become more perceptive.</li>
       <li>Your memory improves.</li>
       <li>Your decision-making skills improve.</li>
@@ -183,7 +187,7 @@ title: Learning (Backbone, and Other Technologies)
       <%= image_tag 'mv-separation.svg', :alt => 'Model/View Separation' %>
       <ul class="column-list">
         <li class="right"><h3>Model</h3></li>
-        <li class="right">Stores application data.</li>
+        <li class="right">Manages application data.</li>
         <li class="right">Notifies of changes.</li>
         <li class="left"><h3>View</h3></li>
         <li class="left">Captures user input.</li>
@@ -206,28 +210,52 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>Collection / Model</h2>
-    <p>... are direct representations of RESTful resources.</p>
-    <ul class="column-list backbone-rest">
-      <li><h3>Routes</h3></li>
-      <li>GET&nbsp; /muppets/</li>
-      <li>POST /muppets/</li>
-      <li>GET&nbsp; /muppets/1</li>
-      <li>PUT&nbsp; /muppets/1</li>
-      <li>DEL&nbsp; /muppets/1</li>
-      <li><h3>Backbone</h3></li>
-      <li>collection.fetch();</li>
-      <li>collection.create();</li>
-      <li>model.fetch();</li>
-      <li>model.save();</li>
-      <li>model.destroy();</li>
-    </ul>
+    <table class="backbone-rest collection">
+      <tr>
+        <td class="component" rowspan="2">Collection</td>
+        <td>GET&nbsp; /muppets/ <em>.....</em> collection.fetch();</td>
+      </tr>
+      <tr>
+        <td>POST /muppets/ <em>.....</em> collection.create();</td>
+      </tr>
+    </table>
+    <table class="backbone-rest model">
+      <tr>
+        <td class="component" rowspan="3">Model</td>
+        <td>GET&nbsp; /muppets/1 <em>....</em> model.fetch();</td>
+      </tr>
+      <tr>
+        <td>PUT&nbsp; /muppets/1 <em>....</em> model.save();</td>
+      </tr>
+      <tr>
+        <td>DEL&nbsp; /muppets/1 <em>....</em> model.destroy();</td>
+      </tr>
+    </table>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
-    <h2>Model.parse</h2>
-    <p></p>
+    <h2>API / Modeling</h2>
+    <p>Data may not match 1:1, and that's okay.</p>
+    <div class="column-layout backbone-parse">
+      <div class="column left">
+<code><pre>{
+  "muppets": [
+    {"id": 1, "name": "Kermit"},
+    {"id": 2, "name": "Fozzy"}
+  ]
+}</pre></code>
+      </div>
+      <div class="column right">
+<code><pre>Backbone.Collection.extend({
+  url: "/muppets",
+  parse: function(data) {
+    return data.muppets;
+  }
+});</pre></code>
+      </div>
+    </div>
   </div>
 </div>
 

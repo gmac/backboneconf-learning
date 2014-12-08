@@ -141,6 +141,17 @@ em {
   width: 60%;
 }
 
+.column-layout {
+  display: table;
+  margin: 0 auto;
+  table-layout: fixed;
+
+  .column {
+    display: table-cell;
+    text-align: left;
+  }
+}
+
 .bullet-list {
   list-style: disc outside none;
   margin-left: 15px;
