@@ -24,7 +24,7 @@ title: Learning (Backbone, and Other Technologies)
   <div class="bottom-left">
     <ul class="bullet-list">
       <li>Learning.</li>
-      <li>Learning Foundation.</li>
+      <li>Learning JavaScript.</li>
       <li>Learning Backbone.</li>
       <li>Learning the Future.</li>
     </ul>
@@ -46,20 +46,31 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide sub-section">
   <div class="center-content">
     <h2>Growth Mindset</h2>
-    <blockquote>
-      <p>"The moment we believe that success is determined by an ingraned level of ability, we will be brittle in the face of adversity."</p>
-      <footer>&mdash; Josh Waitzkin</footer>
-    </blockquote>
+    <div class="growth-mindset">
+      <%= image_tag 'growth-mindset-video.png', :alt => 'Eduardo Briceno, "The Power of Belief: Mindset and Success".' %>
+      <blockquote>
+        <!--p>"The key to success is not simply effort, or focus, or resiliance; but it is the growth mindset that creates them. The mindset itself is critical."</p-->
+        <p>"When we realize that we can change our own abilities&mdash;when we have a Growth Mindset&mdash;we bring our game to new levels."</p>
+        <footer>Eduardo Briceno<br> "The Power of Belief: Mindset and Success"</footer>
+      </blockquote>
+    </div>
   </div>
 </div>
 
-<div class="slide section growth-mindset">
+<!--div class="slide section growth-mindset">
   <iframe width="560" height="315" src="//www.youtube.com/embed/pN34FNbOKXc?start=119&end=173&showinfo=0&modestbranding=1&controls=0" frameborder="0" allowfullscreen></iframe>
   <div class="bottom-panel">
     <p>
       Eduardo Briceno,<br>
       "The Power of Belief: Mindset and Success"
     </p>
+  </div>
+</div-->
+
+<div class="slide">
+  <div class="center-content">
+    <h2>Mindset &nbsp;Perception</h2>
+    <%= image_tag 'growth-mindset.svg', :alt => 'Fixed versus Growth Mindset.', :class => 'cycle-of-change' %>
   </div>
 </div>
 
@@ -74,13 +85,13 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>Mentorship</h2>
-    <p>Junior + Senior experience levels push <em>each other</em> <br>along the Emotional Cycle of Change.</p>
     <%= image_tag 'junior-senior.svg', :alt => 'Junior + Senior', :class => 'junior-senior' %>
+    <p>Junior + Senior experience levels push <em>each other</em> <br>along the Emotional Cycle of Change.</p>
   </div>
 </div>
 
 <div class="slide section">
-  <h1 class="center-content">Learning Foundation.</h1>
+  <h1 class="center-content">Learning JavaScript.</h1>
 </div>
 
 <div class="slide">
@@ -106,7 +117,6 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content javascript-difficulty">
     <h2>So why is it Hard?</h2>
-    <p>(Thank you Angus Croll for this explanation)</p>
     <%= image_tag 'javascript.png', :alt => 'JavaScript', :class => 'javascript-intro' %>
   </div>
 </div>
@@ -114,7 +124,7 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide sub-section">
   <div class="center-content">
     <blockquote>
-      <p>Ironically, embracing only the "easy" parts of JavaScript makes many operations seem illogical, and thus makes the language more confusing as a whole.</p>
+      <p>Ironically, embracing only the "easy" parts of JavaScript makes many common operations seem illogical, and thus makes the language as a whole more confusing.</p>
     </blockquote>
   </div>
 </div>
@@ -125,16 +135,16 @@ title: Learning (Backbone, and Other Technologies)
     <div class="column-layout javascript-core">
       <div class="column">
         <h3>Easy Parts</h3>
-        <ul class="bullet-list">
+        <ul>
           <li>Data&nbsp;Types&nbsp;&amp;&nbsp;Variables</li>
-          <li>Conditionals</li>
           <li>Data&nbsp;Structures&nbsp;&amp;&nbsp;Enums</li>
+          <li>Conditionals</li>
           <li>Simple Functions</li>
         </ul>
       </div>
       <div class="column">
         <h3>Real Parts</h3>
-        <ul class="bullet-list">
+        <ul>
           <li>First-Class Functions</li>
           <li>Closure &amp; Scope</li>
           <li>Contextual Invocation</li>
@@ -154,16 +164,17 @@ title: Learning (Backbone, and Other Technologies)
 </div>
 
 <div class="slide">
-  <div class="center-content">
+  <div class="center-content learn-languages">
     <h2 class="smaller">Benefits of Multiple &nbsp;Languages</h2>
-    <ul class="bullet-list learn-languages">
+    <ul>
       <li>You become smarter.</li>
-      <li>You build multitasking skills.</li>
+      <li>You build multi-tasking skills.</li>
       <li>You become more perceptive.</li>
       <li>Your memory improves.</li>
       <li>Your decision-making skills improve.</li>
-      <li>You improve your native language.</li>
+      <li>Your native language improves.</li>
     </ul>
+    <%= image_tag 'actfl-horizontal.png', :alt => 'ACTFL' %>
   </div>
 </div>
 
@@ -200,7 +211,8 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>M/V is One-to-Many</h2>
-    <div class="mv-separation">
+    <p>Many views can synchronize updates through a shared model.</p>
+    <div class="mv-separation mv-one-to-many">
       <span class="divider"></span>
       <%= image_tag 'mv-many.svg', :alt => 'Model/View Separation' %>
     </div>
@@ -210,6 +222,7 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>Collection / Model</h2>
+    <p>Form a direct mapping of RESTful resources.</p>
     <table class="backbone-rest collection">
       <tr>
         <td class="component" rowspan="2">Collection</td>
@@ -237,7 +250,7 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>API / Modeling</h2>
-    <p>Data may not match 1:1, and that's okay.</p>
+    <p>It's okay if they don't match 1:1 ... that's what <code>parse</code> is for.</p>
     <div class="column-layout backbone-parse">
       <div class="column left">
 <code><pre>{
@@ -262,7 +275,7 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>Routers</h2>
-    <p>Are hard.</p>
+    <p>There are no simple lessons.</p>
   </div>
 </div>
 
@@ -296,11 +309,12 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>Backbone IS Pattern</h2>
-    <blockquote>
+    <h2>Backbone is Pattern</h2>
+    <!--blockquote>
       <p>Backbone is the minimal abstraction of ...<br> the common solutions for 90% of use cases.</p>
       <footer>&mdash; Jeremy Ashkenas</footer>
-    </blockquote>
+    </blockquote-->
+    <%= image_tag 'mv-separation.svg', :alt => 'Model/View Separation', :class => 'backbone-pattern' %>
   </div>
 </div>
 
@@ -316,7 +330,7 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide section">
   <div class="top-left">
-    <h1>Thank You</h1>
+    <h1>Thank You <em>(And Happy Holidays!)</em></h1>
   </div>
   <div class="bottom-left">
     <ul>

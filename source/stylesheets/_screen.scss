@@ -39,7 +39,11 @@ h3 {
 em {
   font-style: italic;
 }
-  
+
+code {
+  font-family: $mono;
+}
+
 .slide {
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -60,10 +64,13 @@ em {
   }
 
   blockquote {
-    border-radius: 15px;
     margin: 5% auto 0;
     padding: 0;
     width: 80%;
+
+    footer {
+      font-size: 0.75em;
+    }
   }
 }
 
@@ -91,6 +98,13 @@ em {
 .bottom-left {
   bottom: 10%;
   left: 10%;
+  position: absolute;
+  z-index: 100;
+}
+
+.bottom-right {
+  bottom: 10%;
+  right: 10%;
   position: absolute;
   z-index: 100;
 }

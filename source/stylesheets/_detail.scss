@@ -19,6 +19,31 @@ blockquote .smaller {
 }
 
 .growth-mindset {
+  margin: 0 auto;
+  width: 85%;
+
+  img {
+    float: left;
+    position: relative;
+    top: 0.3em;
+    width: 40%;
+  }
+
+  blockquote {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 5%;
+    text-align: left;
+    width: 60%;
+  }
+
+  footer {
+    font-size: 22px;
+  }
+}
+
+/*.growth-mindset {
   background-color: black;
   color: white;
   text-shadow: 3px 3px 5px black;
@@ -26,7 +51,7 @@ blockquote .smaller {
   h2 {
     color: white;
   }
-}
+}*/
 
 .ga-yes {
   max-height: 125px;
@@ -37,12 +62,19 @@ blockquote .smaller {
 }
 
 .junior-senior {
-  min-width: 40%;
+  min-width: 300px;
 }
 
 .learn-languages {
-  margin: 0 auto;
-  width: 75%;
+  ul {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  img {
+    opacity: 0.3;
+    padding-top: 50px;
+  }
 }
 
 .javascript-intro {
@@ -63,6 +95,10 @@ blockquote .smaller {
 
 .javascript-core {
   width: 80%;
+
+  .column {
+    text-align: center;
+  }
 }
 
 .backend-frontend {
@@ -102,8 +138,13 @@ blockquote .smaller {
   }
 }
 
+.mv-one-to-many {
+  max-width: 900px;
+}
+
 .backbone-rest {
   border: 3px solid $main-color;
+  border-radius: 10px;
   font: 24px/2 $mono;
   margin: 0 auto 20px;
   width: 80%;
@@ -150,6 +191,11 @@ blockquote .smaller {
   .column.right {
     padding-left: 50px;
   }
+}
+
+.backbone-pattern {
+  left: 1.5%;
+  position: relative;
 }
 
 .conway {
