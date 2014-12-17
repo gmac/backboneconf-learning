@@ -1,8 +1,16 @@
+To run presentation:
+
+```
+gem install middleman
+bundle install
+bundle exec middleman
+```
+
 # Learning
 
  - Hello
  - Vox Media / GA / Epoxy
- - Thank you Boucoup, Peter, Travis
+ - Thank you Bocoup; also Peter Lai, and Travis Vander Hoop
  
 # Backbone @ Vox
 
@@ -15,15 +23,15 @@
 
 ## Learning is Hard
  
- - Antaginist is the CoC.
+ - Antaginist in the story of learning is the Cycle of Change.
  - Sine wave of peaks and valleys representing our successes and struggles.
  - What is YOUR peak?
- - What valleys do you avoid?
+ - What struggles do you avoid?
 
 ## Growth Mindset
 
  - Learning starts with our attitude toward it.
- - See TED Talk by Eduardo Briceno.
+ - See TED Talk by Eduardo Briceno (https://www.youtube.com/watch?v=pN34FNbOKXc).
 
 ## Mindsets
 
@@ -42,18 +50,16 @@
 
  - From interview panels and hiring officers:  
  *"What will this individual cost us?"*
- - Flip:  
-   *"What are we lacking without them?""*
  
 Powerful feedback loop...
 
-  - **Seniors** distill their own knowledge. They teach themselves.
-  - **Juniors** are fearless in conquering new material. They shift the foundation.
+  - **Seniors** distill their own knowledge into new conclusions. They teach themselves.
+  - **Juniors** are fearless in conquering new material. They shift the team foundation.
 
 # Learning JavaScript
 
 ## Why is it so hard?
- - For such a small language, there's a disproportionate level of anger and misery associated.
+ - For such a small language, why is there a disproportionate level of anger and misery associated?
  - Thank you, Angus Croll for explanation.
  - JavaScript is TWO languages:
  	- The simple familiar (tip).
@@ -66,10 +72,10 @@ Powerful feedback loop...
 
 ## Core JavaScript
 
- - The solution: embrace the language in its entirety as "core" knowledge.
+ - The solution: embrace more of the language as "core" knowledge.
  - Demystifies many library-level programming patterns.
  
-Aspirational:
+Aspirational Core learning points:
 
  - **First-Class Functions**: functions as objects.  
  - **Closure & Scope**: who knows what, where.
@@ -86,7 +92,7 @@ Aspirational:
 
  - Distilled research from the ACTFL...
  - Does this seem relevant to software engineers?
- - BONUS: also forestalls degenerative diseases of the brain!
+ - BONUS: it also forestalls degenerative diseases of the brain!
  
  So:
  
@@ -134,14 +140,16 @@ Aspirational:
  - We want to avoid convoluted models.
 
 ## Routers
+
  - There are no simple lessons.
+ - While you can teach models & views in a couple days, routers take weeks of repeated practice.
  - Thanks James!
 
 # Learning the Future
 
 ## A Retrospective
  
- - NOT about obesity, but about maps.
+ - This is NOT about obesity, but about maps.
  - This is my story, and I'm sure most of you have something similar (or will soon)...
    - HTML image maps.
    - Macromedia Director.
@@ -151,23 +159,24 @@ Aspirational:
 
 ## Design Patterns
 
- - There's a book about this...
- - 15 years post-"Software Design Patterns".
+ - There's a famous book about this...
+ - This quote is 15 years post-"Software Design Patterns".
  - The book's original influences can still be seen today.
  
 SO:
  
  - **As technology evolves, we remember software not for it's code, but for its design.**
- - How will we remember Backbone?
  
 ## Backbone in 2025
 
- - What do we remember, and/or what still applies?
+ - What will we remember, and/or what will still apply?
+ - Design will stand the test of time, code will not.
 
 ## Start Over
  
  - Conway's Game of Life.
  - Cited among the most valuable days of class.
+ - Pair up, code for 1 hour, then start over.
    - Letting go.
    - Breaking the cycle.
    - Starting over.

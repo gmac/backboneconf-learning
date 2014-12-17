@@ -48,24 +48,6 @@ blockquote .smaller {
   }
 }
 
-/*.growth-mindset {
-  background-color: black;
-  color: white;
-  text-shadow: 3px 3px 5px black;
-
-  h2 {
-    color: white;
-  }
-}*/
-
-.ga-yes {
-  max-height: 125px;
-  max-width: 125px;
-  opacity: 0.3;
-  position: relative;
-  top: 0.15em;
-}
-
 .junior-senior {
   min-width: 300px;
 }
@@ -94,13 +76,6 @@ blockquote .smaller {
 
 .javascript-understanding {
   width: 70% !important;
-}
-
-.javascript-lang {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
-  font-family: $mono;
 }
 
 .javascript-difficulty {
