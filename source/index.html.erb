@@ -12,7 +12,7 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="top-left">
-    <h1>Backbone <span class="smaller">@</span><br><%= image_tag 'vox.svg', :alt => 'Vox', :class => 'vox-logo' %></h1>
+    <h1>Backbone <span class="smaller">@</span> <%= image_tag 'vox.svg', :alt => 'Vox', :class => 'vox-logo' %></h1>
   </div>
   <%= image_tag 'cardstack.png', :alt => 'Cardstack', :class => 'vox-cardstack' %>
 </div>
@@ -38,8 +38,8 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h1>Learning is Hard</h1>
-    <p>We confront the Emotional Cycle of Change.</p>
-    <%= image_tag 'cycle-of-change.svg', :alt => 'Emotional Cycle of Change', :class => 'cycle-of-change' %>
+    <p>We confront the Cycle of Change.</p>
+    <%= image_tag 'cycle-of-change.svg', :alt => 'Cycle of Change', :class => 'cycle-of-change' %>
   </div>
 </div>
 
@@ -69,24 +69,24 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>Mindset &nbsp;Perception</h2>
+    <h2>Mindsets</h2>
     <%= image_tag 'growth-mindset.svg', :alt => 'Fixed versus Growth Mindset.', :class => 'cycle-of-change' %>
   </div>
 </div>
 
-<div class="slide">
+<!--div class="slide">
   <h2 class="center-content">I don't know... <u>Yet</u>.</h2>
-</div>
+</div-->
 
 <div class="slide sub-section">
-  <h2 class="center-content"><%= image_tag 'ga-white.png', :alt => 'GA', :class => "ga-yes" %> Yes, Let's!</h2>
+  <h2 class="center-content"><!--%= image_tag 'ga-white.png', :alt => 'GA', :class => "ga-yes" %--> Yes, Let's!</h2>
 </div>
 
 <div class="slide">
   <div class="center-content">
     <h2>Mentorship</h2>
     <%= image_tag 'junior-senior.svg', :alt => 'Junior + Senior', :class => 'junior-senior' %>
-    <p>Junior + Senior experience levels push <em>each other</em> <br>along the Emotional Cycle of Change.</p>
+    <p>Experience levels push <em>each other</em>.</p>
   </div>
 </div>
 
@@ -94,7 +94,7 @@ title: Learning (Backbone, and Other Technologies)
   <h1 class="center-content">Learning JavaScript.</h1>
 </div>
 
-<div class="slide">
+<!--div class="slide">
   <div class="center-content">
     <h2>JavaScript is Small</h2>
     <ul class="column-list javascript-lang">
@@ -112,29 +112,29 @@ title: Learning (Backbone, and Other Technologies)
       <li>try/catch</li>
     </ul>
   </div>
-</div>
+</div-->
 
 <div class="slide">
   <div class="center-content javascript-difficulty">
-    <h2>So why is it Hard?</h2>
+    <h2>Why is it so Hard?</h2>
     <%= image_tag 'javascript.png', :alt => 'JavaScript', :class => 'javascript-intro' %>
   </div>
 </div>
 
 <div class="slide sub-section">
   <div class="center-content">
-    <blockquote>
-      <p>Ironically, embracing only the "easy" parts of JavaScript makes many common operations seem illogical, and thus makes the language as a whole more confusing.</p>
+    <blockquote class="javascript-understanding">
+      <p>Ironically, embracing only the "familiar" parts of JavaScript makes many basic operations seem illogical, and thus makes the language as a whole more confusing.</p>
     </blockquote>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content">
-    <h2>JS, The Real Parts</h2>
-    <div class="column-layout javascript-core">
+    <h2>Core JavaScript</h2>
+    <div class="column-layout real-parts">
       <div class="column">
-        <h3>Easy Parts</h3>
+        <h3>Traditional</h3>
         <ul>
           <li>Data&nbsp;Types&nbsp;&amp;&nbsp;Variables</li>
           <li>Data&nbsp;Structures&nbsp;&amp;&nbsp;Enums</li>
@@ -143,7 +143,7 @@ title: Learning (Backbone, and Other Technologies)
         </ul>
       </div>
       <div class="column">
-        <h3>Real Parts</h3>
+        <h3>Aspirational</h3>
         <ul>
           <li>First-Class Functions</li>
           <li>Closure &amp; Scope</li>
@@ -155,26 +155,26 @@ title: Learning (Backbone, and Other Technologies)
   </div>
 </div>
 
-<div class="slide">
+<div class="slide sub-section">
   <div class="center-content">
-    <h2>Backend / Frontend</h2>
-    <p>What do we learn first? Why?</p>
-    <%= image_tag 'backend-frontend.svg', :alt => 'Backend to Frontend', :class => 'backend-frontend' %>
+    <h2>require('*');</h2>
+    <p>* Another language.</p>
   </div>
 </div>
 
 <div class="slide">
   <div class="center-content learn-languages">
-    <h2 class="smaller">Benefits of Multiple &nbsp;Languages</h2>
+    <h2>Foreign Language:</h2>
     <ul>
-      <li>You become smarter.</li>
-      <li>You build multi-tasking skills.</li>
-      <li>You become more perceptive.</li>
-      <li>Your memory improves.</li>
-      <li>Your decision-making skills improve.</li>
-      <li>Your native language improves.</li>
+      <li>Makes you smarter.</li>
+      <li>Builds multi-tasking skills.</li>
+      <li>Increases perception.</li>
+      <li>Improves memory.</li>
+      <li>Improves decision-making skills.</li>
+      <li>Improves your native language.</li>
     </ul>
-    <%= image_tag 'actfl-horizontal.png', :alt => 'ACTFL' %>
+    <p class="attribution">From the American Council on the Teaching of Foreign Languages</p>
+    <!--%= image_tag 'actfl-horizontal.png', :alt => 'ACTFL' %-->
   </div>
 </div>
 
@@ -192,13 +192,21 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
+    <h2>Backend / Frontend</h2>
+    <p>Backend is a good place to start.</p>
+    <%= image_tag 'backend-frontend.svg', :alt => 'Backend to Frontend', :class => 'backend-frontend' %>
+  </div>
+</div>
+
+<div class="slide">
+  <div class="center-content">
     <h2>Model / View Separation</h2>
     <div class="mv-separation">
       <span class="divider" style="height:calc(110%);"></span>
       <%= image_tag 'mv-separation.svg', :alt => 'Model/View Separation' %>
-      <ul class="column-list">
+      <ul class="column-list smaller">
         <li class="right"><h3>Model</h3></li>
-        <li class="right">Manages application data.</li>
+        <li class="right">Manages app data.</li>
         <li class="right">Notifies of changes.</li>
         <li class="left"><h3>View</h3></li>
         <li class="left">Captures user input.</li>
@@ -210,8 +218,8 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>M/V is One-to-Many</h2>
-    <p>Many views can synchronize updates through a shared model.</p>
+    <h2>M/V is Freeform</h2>
+    <p>Views synchronize through shared models.</p>
     <div class="mv-separation mv-one-to-many">
       <span class="divider"></span>
       <%= image_tag 'mv-many.svg', :alt => 'Model/View Separation' %>
@@ -226,22 +234,22 @@ title: Learning (Backbone, and Other Technologies)
     <table class="backbone-rest collection">
       <tr>
         <td class="component" rowspan="2">Collection</td>
-        <td>GET&nbsp; /muppets/ <em>.....</em> collection.fetch();</td>
+        <td>GET&nbsp; /muppets/ <em>....</em> collection.fetch();</td>
       </tr>
       <tr>
-        <td>POST /muppets/ <em>.....</em> collection.create();</td>
+        <td>POST /muppets/ <em>....</em> collection.create();</td>
       </tr>
     </table>
     <table class="backbone-rest model">
       <tr>
         <td class="component" rowspan="3">Model</td>
-        <td>GET&nbsp; /muppets/1 <em>....</em> model.fetch();</td>
+        <td>GET&nbsp; /muppets/1 <em>...</em> model.fetch();</td>
       </tr>
       <tr>
-        <td>PUT&nbsp; /muppets/1 <em>....</em> model.save();</td>
+        <td>PUT&nbsp; /muppets/1 <em>...</em> model.save();</td>
       </tr>
       <tr>
-        <td>DEL&nbsp; /muppets/1 <em>....</em> model.destroy();</td>
+        <td>DEL&nbsp; /muppets/1 <em>...</em> model.destroy();</td>
       </tr>
     </table>
   </div>
@@ -250,7 +258,7 @@ title: Learning (Backbone, and Other Technologies)
 <div class="slide">
   <div class="center-content">
     <h2>API / Modeling</h2>
-    <p>It's okay if they don't match 1:1 ... that's what <code>parse</code> is for.</p>
+    <p>Don't always match ... that's what <code>parse</code> is for.</p>
     <div class="column-layout backbone-parse">
       <div class="column left">
 <code><pre>{
@@ -264,7 +272,7 @@ title: Learning (Backbone, and Other Technologies)
 <code><pre>Backbone.Collection.extend({
   url: "/muppets",
   parse: function(data) {
-    return data.muppets;
+    <b>return data.muppets;</b>
   }
 });</pre></code>
       </div>
@@ -276,6 +284,7 @@ title: Learning (Backbone, and Other Technologies)
   <div class="center-content">
     <h2>Routers</h2>
     <p>There are no simple lessons.</p>
+    <%= image_tag 'routers.jpg', :alt => 'Lessons of Routers', :class => 'routers' %>
   </div>
 </div>
 
@@ -301,7 +310,7 @@ title: Learning (Backbone, and Other Technologies)
   <div class="center-content">
     <h2>Design Patterns</h2>
     <blockquote>
-      <p class="smaller">The iPhone SDK is based on the NeXTStep object-oriented frameworks like the AppKit. ... Which is a great example of the enduring nature of good design, and how it survives different technical manifestations.</p>
+      <p class="smaller">The iPhone SDK is based on the NeXTStep object-oriented frameworks ... Which is a great example of the enduring nature of good design, and how it survives different technical manifestations.</p>
       <footer>&mdash; Erich Gamma &amp; Richard Helm</footer>
     </blockquote>
   </div>
@@ -309,7 +318,7 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide">
   <div class="center-content">
-    <h2>Backbone is Pattern</h2>
+    <h2>Backbone in 2025</h2>
     <!--blockquote>
       <p>Backbone is the minimal abstraction of ...<br> the common solutions for 90% of use cases.</p>
       <footer>&mdash; Jeremy Ashkenas</footer>
@@ -330,7 +339,7 @@ title: Learning (Backbone, and Other Technologies)
 
 <div class="slide section">
   <div class="top-left">
-    <h1>Thank You <em>(And Happy Holidays!)</em></h1>
+    <h1>Thank You <em>(And Happy Holidays)</em></h1>
   </div>
   <div class="bottom-left">
     <ul>

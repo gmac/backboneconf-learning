@@ -14,7 +14,7 @@ h1,
 h2,
 h3 {
   color: $main-color;
-  font: 400 100px/1.4 $bebas, sans-serif;
+  font: 400 80px/1.4 $bebas, sans-serif;
   word-spacing: 0.15em;
 
   em {
@@ -31,7 +31,7 @@ h3 {
 }
 
 h3 {
-  color: #999;
+  color: tint($main-color, 35%);
   font-size: 40px;
   margin-bottom: 0.25em;
 }
